@@ -4,7 +4,7 @@
     ViewData["Title"] = "Courses";
 }
 
-<h2>Courses</h2>
+    <h2>Offered Courses </h2>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -44,9 +44,9 @@
                     @Html.DisplayFor(modelItem => item.Department.Name)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.CourseID">Edit</a> 
-                    <a asp-action="Details" asp-route-id="@item.CourseID">Details</a> 
-                    <a asp-action="Delete" asp-route-id="@item.CourseID">Delete</a>
+                    <a class="btn btn-sm btn-outline-light" asp-action="Edit" asp-route-id="@item.CourseID">Edit</a> 
+                    <a class="btn btn-sm  btn-outline-info" asp-action="Details" asp-route-id="@item.CourseID">Details</a> 
+                    <a class="btn btn-sm btn-outline-warning" asp-action="Delete" asp-route-id="@item.CourseID">Delete</a>
                 </td>
             </tr>
         }

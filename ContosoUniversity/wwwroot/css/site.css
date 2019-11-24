@@ -1,5 +1,6 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
+@import url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
 
 a.navbar-brand {
   white-space: normal;
@@ -10,14 +11,17 @@ a.navbar-brand {
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
 }
-
+body {
+    font-family: 'Baskervville', serif;
+    background: #19973e;
+}
 .border-top {
   border-top: 1px solid #e5e5e5;
 }
@@ -28,7 +32,10 @@ html {
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
-
+.jumbotron {
+    background: #19ad65;
+    text-shadow: 0 .9rem .9rem rgba(0, 0, 0, .05);
+}
 button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
@@ -40,6 +47,9 @@ html {
   position: relative;
   min-height: 100%;
 }
+nav{
+    background: #19ad65;
+}
 
 body {
   /* Margin bottom by footer height */
@@ -47,6 +57,7 @@ body {
 }
 .footer {
   position: absolute;
+  color:white;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
